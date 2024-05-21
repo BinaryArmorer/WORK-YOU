@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WORK&YOU</title>
+</head>
+<body>
+    <section id="form_employers">
+        <form id="form_window_employers">
+            <p>Подать заявку на собеседование</p>
+            <a href="#" class="form_close_employers"></a>
+
+            <div class="form_group_employers">
+                <label for="first-name">Имя:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form_group_employers">
+                <label for="last-name">Фамилия:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form_group_employers">
+                <label for="middle-name">Отчество:</label>
+                <input type="text" id="middle-name" name="middle-name">
+            </div>
+
+            <div class="form_group_employers">
+                <label for="age">Возраст:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div class="form_group_employers">
+                <label for="comment">Комментарий:</label>
+                <textarea id="comment" name="comment"></textarea>
+            </div>
+
+            <div class="form_group_employers">
+                <label for="gender">Пол:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Выберите пол</option>
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                    <option value="other">Другой</option>
+                </select>
+            </div>
+
+            <div class="form_group_employers">
+                <label for="education">Образование:</label>
+                <input type="text" id="education" name="education" required>
+            </div>
+
+            <div class="form_group_employers">
+                <label for="specialization">Специальность:</label>
+                <input type="text" id="specialization" name="specialization" required>
+            </div>
+
+            <div class="form_group_employers">
+                <label for="experience">Опыт работы (в годах):</label>
+                <input type="number" id="experience" name="experience" required>
+            </div>
+
+            <div class="form_group_employers">
+                <label for="resume">Загрузить резюме (PDF):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf" required>
+            </div>
+
+            <div class="form_group_employers">
+                <label for="location">Место жительства:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+
+            <div class="form_group_submit">
+                <button class="form_sumbit_employers" type="submit">Отправить заявку</button>
+            </div>
+        </form>
+
+        <div id="overlay"></div>
+    </section>
+
+    <nav>
+        <a href="index.html"><img src="img/gratis.png" width="32" height="32"> WORK&YOU</a>
+        <a class="nav_a_hover" href="employers.html">Соискателям</a>
+        <a class="nav_a_hover" href="applicants.html">Работодателям</a>
+        <a class="nav_a_hover" href="contact.html">Контакты</a>
+        <a class="nav_notification"><img src="img/notification.png" width="20" height="20"></a>
+    </nav>
+
+    <main>
+        <section class="vacancy_section">
+            <h1>WORK&YOU объединяет соискателей и работодателей. Станьте кузнецом своей карьеры с нами!</h1>
+            <div class="vacancy_div_parent">
+
+                <button onclick="window.location.href = '#form_employers';" class="vacancy_button_child">
+                    <h2>FullStack программист на полную ставку</h2>
+                    <p>Подать заявку на собеседование</p>
+                    <img src="https://media.istockphoto.com/id/1354205065/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%8D%D0%BD%D1%82%D1%83%D0%B7%D0%B8%D0%B0%D1%81%D1%82-%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9-%D0%B8%D1%82-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%89%D0%B8%D0%B9-%D0%BD%D0%B0-%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%B5-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-%D0%BF%D0%BE.jpg?s=612x612&w=0&k=20&c=sbnFMwxtA8dnHw7aqCh6Kaqm6SSnPl3Bhih_R2TI0Ew=">
+                </button>
+
+                <button onclick="window.location.href = '#form_employers';" class="vacancy_button_child">
+                    <h2>Клоун в Санкт-Петербургском цирке</h2>
+                    <p>Подать заявку на собеседование</p>
+                    <img src="https://wl-adme.cf.tsp.li/resize/728x/png/c7d/f39/9b6dd45e8ab1d355a6b12af3ed.png">
+                </button>
+
+                <button onclick="window.location.href = '#form_employers';" class="vacancy_button_child">
+                    <h2>Прораб в Москве</h2>
+                    <p>Подать заявку на собеседование</p>
+                    <img src="https://upinc.ru/wp-content/uploads/2023/03/obyazannosti-proraba3.jpg">
+                </button>
+
+                <button onclick="window.location.href = '#form_employers';" class="vacancy_button_child">
+                    <h2>Клоун в Санкт-Петербургском цирке</h2>
+                    <p>Подать заявку на собеседование</p>
+                    <img src="https://habrastorage.org/getpro/habr/upload_files/416/3f6/bc5/4163f6bc5a678fd925bbb0e8d0b9e6b3.png">
+                </button>
+
+                <button onclick="window.location.href = '#form_employers';" class="vacancy_button_child">
+                    <h2>Клоун в Санкт-Петербургском цирке</h2>
+                    <p>Подать заявку на собеседование</p>
+                    <img src="https://abrakadabra.fun/uploads/posts/2022-03/1646546029_18-abrakadabra-fun-p-fon-dlya-prezentatsii-avtomekhanik-19.jpg">
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>E-mail для рекламодателей: ad@work.you</p>
+                <p>E-mail для работодателей: applicants@work.you</p>
+                <p>E-mail для соискателей: employers@work.you</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://vk.com"><img src="img/vk.png" width="32" height="32"></a>
+                <a href="https://web.telegram.org"><img src="img/telegram.png" width="32" height="32"></a>
+                <a href="https://www.whatsapp.com"><img src="img/whatsapp.png" width="32" height="32"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>  
+    <script src="js/script.js"></script>   
+</body>
+</html>

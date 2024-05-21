@@ -1,0 +1,174 @@
+@font-face {  /* Экспортируем шрифт в проект */
+    font-family: Raleway;
+    src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf')
+}
+html, body {  /* Применяем шрифт и фон ко всему проекту*/
+    font-family: Raleway;
+    background-color: #e4e2e2;
+    height: 100%;
+}
+main { /* Задаюм минимальную длинну страницы*/
+    min-height: 100%;
+}
+nav { /* Шапка сайта */
+    position: fixed;
+    padding: 10px;
+    background: #d8d8d8;
+    border-bottom: 1px solid #000000;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    margin: 5px;
+}
+.nav_a_hover:hover {
+    color: rgb(0, 70, 0);
+    background-color: rgb(182, 182, 182);
+}
+.nav_notification {
+    float: right;
+}
+footer { /* Футер */
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 7px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-left {
+    width: 50%;
+}
+.footer-right {
+    width: 50%;
+}
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.footer-right a {
+    margin-right: 10px;
+}
+.footer-right img {
+    vertical-align: middle;
+}
+
+
+/* Вакансии */
+.vacancy_section {
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+}
+.vacancy_div_parent {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 50%;
+    justify-content: center;
+}
+.vacancy_button_child {
+    border: 1px solid black;
+    background-color: rgba(173, 173, 173, 0.705);
+    padding: 10px;
+}
+.vacancy_button_child:hover {
+    background-color: rgba(6, 58, 3, 0.274);
+}
+.vacancy_button_child img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+
+/* Заявка на собеседование */
+#form_employers { /* Затемнение */
+    display: none;
+    position: fixed;
+    background: rgba(32, 32, 32, 0.616);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#form_employers:target {
+    display: block;
+}
+#form_employers input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 8px;
+}
+#form_window_employers {
+	position: relative;
+	width: 40%;
+    height: 71%;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 20px 50px 20px 34px;
+    background-color: #e4e3e2;
+    border: 1px solid black;
+    top: 90px;
+}
+#form_group_employers {
+    margin-bottom: 5px;
+    width: 400px;
+}
+#form_window_employers label {
+    display: block;
+}
+.form_group_submit {
+	display: flex;
+	justify-content: center;
+}
+.form_sumbit_employers {
+	position: relative;
+	margin-top: 10px;
+	margin-left: 12px;
+    padding: 10px 20px;
+    background-color: #5e5e5e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form_sumbit_employers:hover {
+    background-color: #094418;
+}
+.form_close_employers {
+    background: no-repeat url('../img/cls.png');
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 20px;
+    width: 20px;
+}
+.form_close_employers:hover {
+    opacity: 1;
+}
+
+/* Информация для соискателей */
+#FAQ_employers {
+    margin-top: 80px;
+}
+#FAQ_employers h1 {
+    text-align: center;
+    font-size: 24px;
+}
+#FAQ_employers ol, li, p {
+    font-size: 20px;
+}
