@@ -1,6 +1,6 @@
 "use strict";
 // Уведомление об отправленной зайявке на собеседовании и принятии заявки
-document.getElementById('form_window_employers').addEventListener('submit', function(event) {
+document.getElementById('form_window_applicants').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const formData = new FormData(this);
