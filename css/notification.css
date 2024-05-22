@@ -1,0 +1,39 @@
+#form_notifications { /* Затемнение */
+    display: none;
+    position: fixed;
+    background: #e4e3e2;
+    border: 1px solid black;
+    width: 40%;
+    height: 60%;
+    padding: 20px;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+
+}
+#form_notifications:target {
+    display: block;
+}
+.form_group_notifications {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    width: 70%;
+}
+.form_close_notifications {
+    background: no-repeat url('../img/cls.png');
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 20px;
+    width: 20px;
+}
+.form_close_notifications:hover {
+    opacity: 1;
+}
+#form_notifications p {
+    text-align: center;
+}
