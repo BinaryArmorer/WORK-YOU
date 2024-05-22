@@ -19,3 +19,13 @@ document.getElementById('form_window_applicants').addEventListener('submit', fun
         alert(message);
     }, 5000);
 });
+
+
+
+// Открытие и закрытие форм
+function FormOpen(form_target) {
+    document.getElementById(form_target).showModal();
+}
+function FormClose(form_target) {
+    document.getElementById(form_target).close();
+}
