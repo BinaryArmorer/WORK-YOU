@@ -1,4 +1,12 @@
 "use strict";
+// Открытие и закрытие форм
+function FormOpen(form_target) {
+    document.getElementById(form_target).showModal();
+}
+function FormClose(form_target) {
+    document.getElementById(form_target).close();
+}
+
 // Уведомление об отправленной зайявке на собеседовании и принятии заявки
 document.getElementById('form_window_applicants').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -6,7 +14,7 @@ document.getElementById('form_window_applicants').addEventListener('submit', fun
     const formData = new FormData(this);
     const message = `Заявка от ${formData.get('first-name')} ${formData.get('last-name')} на собеседование принята.`;
     
-    document.location='#';
+    FormClose('form_applicants');
     document.getElementById('overlay').style.display = 'block';
 
     setTimeout(function() {
@@ -19,13 +27,3 @@ document.getElementById('form_window_applicants').addEventListener('submit', fun
         alert(message);
     }, 5000);
 });
-
-
-
-// Открытие и закрытие форм
-function FormOpen(form_target) {
-    document.getElementById(form_target).showModal();
-}
-function FormClose(form_target) {
-    document.getElementById(form_target).close();
-}
