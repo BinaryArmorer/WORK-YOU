@@ -6,6 +6,14 @@ function FormOpen(form_target) {
 function FormClose(form_target) {
     document.getElementById(form_target).close();
 }
+function RegSucceful() {
+    FormClose('form_registration');
+    FormOpen('form_success_registration');
+    document.getElementById("reg").parentNode.removeChild(document.getElementById("reg"));
+    setTimeout(() => {
+        FormClose('form_success_registration');
+    }, 2000);
+}
 
 // Уведомление об отправленной зайявке на собеседовании и принятии заявки
 document.getElementById('form_window_applicants').addEventListener('submit', function(event) {
@@ -27,3 +35,10 @@ document.getElementById('form_window_applicants').addEventListener('submit', fun
         alert(message);
     }, 5000);
 });
+
+function CloseAlertRegistr() {
+    // document.location='index.html';
+    var button = document.getElementById('reg');
+    button.parentNode.removeChild(button);
+    
+}

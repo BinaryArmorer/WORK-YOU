@@ -1,0 +1,21 @@
+/* CONTACTS APPLICANTS.HTML, EMPLOYERS.HTML */
+.contact_grid_div {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 95%;
+    margin: 0 auto;
+}
+.contact_info{
+    grid-column: 1;
+}
+.contact_map {
+    text-align: center;
+    margin: 20px;
+    grid-column: 2;
+}
+.contact_map_border {
+    border: 2px solid black;
+}
+.contact_section h1 {
+    text-align: center;
+}

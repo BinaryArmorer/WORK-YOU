@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form_registration.css">
+    <link rel="stylesheet" href="css/form_applicants.css">
     <link rel="icon" href="img/gratis.png">
     <title>WORK&YOU</title>
 </head>
@@ -14,42 +16,60 @@
         <a class="nav_a_hover" href="applicants.html">Соискателям</a>
         <a class="nav_a_hover" href="employers.html">Работодателям</a>
         <button class="nav_notification" onclick="FormOpen('form_notifications')"><img src="img/notification.png" width="32" height="32"></button>
+        <button id="reg" class="nav_notification" onclick="FormOpen('form_registration')">Регистрация</button>
     </nav>
 
     <main>
+        <h1 class="h1_center">WORK&YOU объединяет соискателей и работодателей. Станьте кузнецом своей карьеры с нами!</h1>
         <section class="vacancy_section">
-            <h1>WORK&YOU объединяет соискателей и работодателей. Станьте кузнецом своей карьеры с нами!</h1>
-            <div class="vacancy_div_parent">
+            <div class="vacancy_elements">
+                <h2>Название вакансии:</h2>
+                <p>Сфера деятельности:</p>
+                <p>Специальность:</p>
+                <p>Описание:</p>
+                <p>Адрес:</p>
+                <div class="vacancy_img_container"><img src="https://media.istockphoto.com/id/1354205065/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%8D%D0%BD%D1%82%D1%83%D0%B7%D0%B8%D0%B0%D1%81%D1%82-%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9-%D0%B8%D1%82-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%89%D0%B8%D0%B9-%D0%BD%D0%B0-%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%B5-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-%D0%BF%D0%BE.jpg?s=612x612&w=0&k=20&c=sbnFMwxtA8dnHw7aqCh6Kaqm6SSnPl3Bhih_R2TI0Ew="></div>
+                <div class="vacancy_button_container"><button onclick="FormOpen('form_applicants')">Откликнуться</button></div>
+            </div>
 
-                <button onclick="FormOpen('form_applicants')" class="vacancy_button_child">
-                    <h2>FullStack программист на полную ставку</h2>
-                    <p>Подать заявку на собеседование</p>
-                    <img src="https://media.istockphoto.com/id/1354205065/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%8D%D0%BD%D1%82%D1%83%D0%B7%D0%B8%D0%B0%D1%81%D1%82-%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9-%D0%B8%D1%82-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%89%D0%B8%D0%B9-%D0%BD%D0%B0-%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%B5-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-%D0%BF%D0%BE.jpg?s=612x612&w=0&k=20&c=sbnFMwxtA8dnHw7aqCh6Kaqm6SSnPl3Bhih_R2TI0Ew=">
-                </button>
+            <div class="vacancy_elements">
+                <h2>Название вакансии:</h2>
+                <p>Сфера деятельности:</p>
+                <p>Специальность:</p>
+                <p>Описание:</p>
+                <p>Адрес:</p>
+                <div class="vacancy_img_container"><img src="https://wl-adme.cf.tsp.li/resize/728x/png/c7d/f39/9b6dd45e8ab1d355a6b12af3ed.png"></div>
+                <div class="vacancy_button_container"><button onclick="FormOpen('form_applicants')">Откликнуться</button></div>
+            </div>
 
-                <button onclick="FormOpen('form_applicants')" class="vacancy_button_child">
-                    <h2>Клоун в Санкт-Петербургском цирке</h2>
-                    <p>Подать заявку на собеседование</p>
-                    <img src="https://wl-adme.cf.tsp.li/resize/728x/png/c7d/f39/9b6dd45e8ab1d355a6b12af3ed.png">
-                </button>
+            <div class="vacancy_elements">
+                <h2>Название вакансии:</h2>
+                <p>Сфера деятельности:</p>
+                <p>Специальность:</p>
+                <p>Описание:</p>
+                <p>Адрес:</p>
+                <div class="vacancy_img_container"><img src="https://upinc.ru/wp-content/uploads/2023/03/obyazannosti-proraba3.jpg"></div>
+                <div class="vacancy_button_container"><button onclick="FormOpen('form_applicants')">Откликнуться</button></div>
+            </div>
 
-                <button onclick="FormOpen('form_applicants')" class="vacancy_button_child">
-                    <h2>Прораб в Москве</h2>
-                    <p>Подать заявку на собеседование</p>
-                    <img src="https://upinc.ru/wp-content/uploads/2023/03/obyazannosti-proraba3.jpg">
-                </button>
+            <div class="vacancy_elements">
+                <h2>Название вакансии:</h2>
+                <p>Сфера деятельности:</p>
+                <p>Специальность:</p>
+                <p>Описание:</p>
+                <p>Адрес:</p>
+                <div class="vacancy_img_container"><img src="https://habrastorage.org/getpro/habr/upload_files/416/3f6/bc5/4163f6bc5a678fd925bbb0e8d0b9e6b3.png"></div>
+                <div class="vacancy_button_container"><button onclick="FormOpen('form_applicants')">Откликнуться</button></div>
+            </div>
 
-                <button onclick="FormOpen('form_applicants')" class="vacancy_button_child">
-                    <h2>Тимлид в Екатиринбурге</h2>
-                    <p>Подать заявку на собеседование</p>
-                    <img src="https://habrastorage.org/getpro/habr/upload_files/416/3f6/bc5/4163f6bc5a678fd925bbb0e8d0b9e6b3.png">
-                </button>
-
-                <button onclick="FormOpen('form_applicants')" class="vacancy_button_child">
-                    <h2>Автомеханик в Калининграде</h2>
-                    <p>Подать заявку на собеседование</p>
-                    <img src="https://abrakadabra.fun/uploads/posts/2022-03/1646546029_18-abrakadabra-fun-p-fon-dlya-prezentatsii-avtomekhanik-19.jpg">
-                </button>
+            <div class="vacancy_elements">
+                <h2>Название вакансии:</h2>
+                <p>Сфера деятельности:</p>
+                <p>Специальность:</p>
+                <p>Описание:</p>
+                <p>Адрес:</p>
+                <div class="vacancy_img_container"><img src="https://abrakadabra.fun/uploads/posts/2022-03/1646546029_18-abrakadabra-fun-p-fon-dlya-prezentatsii-avtomekhanik-19.jpg"></div>
+                <div class="vacancy_button_container"><button onclick="FormOpen('form_applicants')">Откликнуться</button></div>
             </div>
         </section>
     </main>
@@ -69,11 +89,14 @@
         </div>
     </footer>
 
+
+    <!-- Уведомления -->
     <dialog id="form_notifications" class="notifications">
         <p>Уведомления</p>
         <button type="button" onclick="FormClose('form_notifications')" class="form_close"></button>
     </dialog>
 
+    <!-- Заявка на собеседование -->
     <dialog id="form_applicants" class="form_applicants">
         <form id="form_window_applicants" class="form_window_applicants">
             <p>Подать заявку на собеседование</p>
@@ -96,12 +119,7 @@
 
             <div class="form_group_applicants">
                 <label for="age">Возраст:</label>
-                <input type="number" id="age" name="age" required>
-            </div>
-
-            <div class="form_group_applicants">
-                <label for="comment">Комментарий:</label>
-                <textarea id="comment" name="comment"></textarea>
+                <input class="micro" type="number" id="age" name="age" required>
             </div>
 
             <div class="form_group_applicants">
@@ -126,7 +144,7 @@
 
             <div class="form_group_applicants">
                 <label for="experience">Опыт работы (в годах):</label>
-                <input type="number" id="experience" name="experience" required>
+                <input class="micro" type="number" id="experience" name="experience" required>
             </div>
 
             <div class="form_group_applicants">
@@ -145,6 +163,30 @@
         </form>
 
         <div id="overlay"></div>
+    </dialog>
+
+    <!-- Регистрация на сайте -->
+    <dialog id="form_registration" class="form_registration">
+        <form>
+            <div class="form_registration_group">
+                <label for="first-name">Имя</label>
+                <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div class="form_registration_group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" name="phone" maxlength="16" placeholder="+7(___)___-__-__"  id="phone" required/>
+            </div>
+            <div class="form_registration_group">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="example@email" id="email" required>
+            </div>
+            <div class="form_registration_submit">
+                <button type="submit" onclick="RegSucceful()">Зарегистрироваться</button>
+            </div>
+        </form>
+    </dialog>
+    <dialog id="form_success_registration" class="form_success_registration">
+        <p>Вы успешно зарегистрировались!</p>
     </dialog>
 
     <script src="js/script.js"></script>  

@@ -1,0 +1,44 @@
+/* Регистрация пользователя и уведомление*/
+.form_registration {
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    background: #8ac1ff;
+}
+.form_registration_submit {
+    width: 100%;
+    text-align: center;
+}
+.form_registration_submit button {
+    border: 0.5px solid black;
+    border-radius: 7px;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+}
+.form_registration_submit button:hover {
+    background: green;
+}
+.form_registration input{
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+.form_registration_group label{
+    display: block;
+}
+.form_registration_group {
+    position: relative;
+    margin: 10px;
+}
+.form_success_registration {
+    width: 400px;
+    height: min-content;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: #8ac1ff;
+}
+.form_success_registration p{
+    display: flex;
+    justify-content: center;
+}
