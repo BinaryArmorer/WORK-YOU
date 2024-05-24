@@ -22,7 +22,6 @@
 @media (max-width: 800px) {
     .contact_grid_div {
         grid-template-columns: 90%;
-        grid-template-rows: 100%;
         justify-content: center;
     }
     .contact_info{

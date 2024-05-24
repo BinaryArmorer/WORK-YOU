@@ -1,12 +1,12 @@
 "use strict";
 // Открытие и закрытие форм
-function FormOpen(form_target) {
+function FormOpen(form_target) { //Функция для открытия всплывающих форм
     document.getElementById(form_target).showModal();
 }
-function FormClose(form_target) {
+function FormClose(form_target) { //Функция для закрытия всплывающих форм
     document.getElementById(form_target).close();
 }
-function RegSucceful() {
+function RegSucceful() { // функция для вывод сообщения об успешной регистрации, а также для удаления кнопки зарегистрироваться со страницы
     FormClose('form_registration');
     FormOpen('form_success_registration');
     document.getElementById("reg").parentNode.removeChild(document.getElementById("reg"));
@@ -35,10 +35,3 @@ document.getElementById('form_window_applicants').addEventListener('submit', fun
         alert(message);
     }, 5000);
 });
-
-function CloseAlertRegistr() {
-    // document.location='index.html';
-    var button = document.getElementById('reg');
-    button.parentNode.removeChild(button);
-    
-}

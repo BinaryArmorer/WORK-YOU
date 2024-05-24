@@ -10,74 +10,113 @@
     <title>WORK&YOU</title>
 </head>
 <body>
-    <nav>
-        <div class="left">
-            <a href="index.html"><img src="img/gratis.png" width="32" height="32"></a>
-            <a class="nav_a_hover" href="index.html">WORK&YOU</a>
-            <a class="nav_a_hover" href="applicants.html">Соискателям</a>
-            <a class="nav_a_hover" href="employers.html">Работодателям</a>
-        </div>
-        <div class="right">
-            <button class="nav_notification" onclick="FormOpen('form_notifications')"><img src="img/notification.png" width="32" height="32"></button>
-            <button id="reg" class="nav_notification" onclick="FormOpen('form_registration')">Регистрация</button>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="index.html"><img src="img/gratis.png" width="32" height="32" alt="logo_ico"></a>
+                <a class="nav_a_hover" href="index.html">WORK&YOU</a>
+                <a class="nav_a_hover" href="applicants.html">Соискателям</a>
+                <a class="nav_a_hover" href="employers.html">Работодателям</a>
+            </div>
+            <div class="right">
+                <button class="nav_notification" onclick="FormOpen('form_notifications')"><img src="img/notification.png" width="32" height="32" alt="notification_ico"></button>
+                <button id="reg" class="nav_notification" onclick="FormOpen('form_registration')">Регистрация</button>
+            </div>
+        </nav>
+    </header>
+
 
     <main>
         <h1 class="h1_center">WORK&YOU объединяет соискателей и работодателей. Станьте кузнецом своей карьеры с нами!</h1>
-        <section class="vacancy_section">
-            <div class="vacancy_elements">
-                <h2>Название вакансии:</h2>
-                <p>Сфера деятельности:</p>
-                <p>Специальность:</p>
-                <p>Описание:</p>
-                <p>Адрес:</p>
-                <div class="vacancy_img_container"><img src="https://media.istockphoto.com/id/1354205065/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%8D%D0%BD%D1%82%D1%83%D0%B7%D0%B8%D0%B0%D1%81%D1%82-%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9-%D0%B8%D1%82-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%89%D0%B8%D0%B9-%D0%BD%D0%B0-%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%B5-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-%D0%BF%D0%BE.jpg?s=612x612&w=0&k=20&c=sbnFMwxtA8dnHw7aqCh6Kaqm6SSnPl3Bhih_R2TI0Ew="></div>
+        <section class="vacancy_section"> <!-- Секция для вакансий -->
+            <div class="vacancy_elements"> <!-- Отдельная вакансия -->
+                <h2>Веб-разработчик</h2>
+                <p class="p_center">Сфера деятельности: IT</p>
+                <h2>Описание</h2>
+                <ul>
+                    <li>Разработка сайтов (интернет-магазины, корпоративные сайты);</li>
+                    <li>Разработкой web приложений;</li>
+                    <li>SEO продвижением;</li>
+                    <li>Контекстной и таргетированной рекламой;</li>
+                    <li>Продвижением на маркетплейсах и авито.</li>
+                </ul>
+                <p>&emsp;На все наши услуги мы даем юридическую гарантию по договору, что является отличным конкурентным преимуществом, так как никто из наших конкурентов не может дать такие гарантии.</p>
+                <p class="p_center">&emsp;Адрес: г. Краснодар, Российская улица, 47</p>
+                <div class="vacancy_img_container"><img src="https://media.istockphoto.com/id/1354205065/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%8D%D0%BD%D1%82%D1%83%D0%B7%D0%B8%D0%B0%D1%81%D1%82-%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9-%D0%B8%D1%82-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%89%D0%B8%D0%B9-%D0%BD%D0%B0-%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%B5-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-%D0%BF%D0%BE.jpg?s=612x612&w=0&k=20&c=sbnFMwxtA8dnHw7aqCh6Kaqm6SSnPl3Bhih_R2TI0Ew=" alt="vacancy_img"></div>
                 <div class="vacancy_button_container"><button onclick="FormOpen('form_applicants')">Откликнуться</button></div>
             </div>
 
-            <div class="vacancy_elements">
-                <h2>Название вакансии:</h2>
-                <p>Сфера деятельности:</p>
-                <p>Специальность:</p>
-                <p>Описание:</p>
-                <p>Адрес:</p>
-                <div class="vacancy_img_container"><img src="https://wl-adme.cf.tsp.li/resize/728x/png/c7d/f39/9b6dd45e8ab1d355a6b12af3ed.png"></div>
+            <div class="vacancy_elements"> <!-- Отдельная вакансия -->
+                <h2>Артист - аниматор</h2>
+                <p class="p_center">Сфера деятельности: IT</p>
+                <h2>Требования</h2>
+                <ul>
+                    <li>Умение работать с детьми</li>
+                    <li>Знание игровых программ</li>
+                    <li>Умение танцевать, проводить спортивные активности</li>
+                    <li>Умение работать в большом коллективе</li>
+                    <li>Коммуникабельность, стрессоустойчивость, дисциплинированность, целеустремлённость</li>
+                </ul>
+                <p>&emsp;</p>
+                <p class="p_center">&emsp;Адрес: посёлок городского типа Сириус, Континентальный проспект, 6</p>
+                <div class="vacancy_img_container"><img src="https://wl-adme.cf.tsp.li/resize/728x/png/c7d/f39/9b6dd45e8ab1d355a6b12af3ed.png" alt="vacancy_img"></div>
                 <div class="vacancy_button_container"><button onclick="FormOpen('form_applicants')">Откликнуться</button></div>
             </div>
 
-            <div class="vacancy_elements">
-                <h2>Название вакансии:</h2>
-                <p>Сфера деятельности:</p>
-                <p>Специальность:</p>
-                <p>Описание:</p>
-                <p>Адрес:</p>
-                <div class="vacancy_img_container"><img src="https://upinc.ru/wp-content/uploads/2023/03/obyazannosti-proraba3.jpg"></div>
+            <div class="vacancy_elements"> <!-- Отдельная вакансия -->
+                <h2>Веб-разработчик</h2>
+                <p class="p_center">Сфера деятельности: IT</p>
+                <h2>Описание</h2>
+                <ul>
+                    <li>Разработка сайтов (интернет-магазины, корпоративные сайты);</li>
+                    <li>Разработкой web приложений;</li>
+                    <li>SEO продвижением;</li>
+                    <li>Контекстной и таргетированной рекламой;</li>
+                    <li>Продвижением на маркетплейсах и авито.</li>
+                </ul>
+                <p>&emsp;На все наши услуги мы даем юридическую гарантию по договору, что является отличным конкурентным преимуществом, так как никто из наших конкурентов не может дать такие гарантии.</p>
+                <p class="p_center">&emsp;Адрес: г. Краснодар, Российская улица, 47</p>
+                <div class="vacancy_img_container"><img src="https://upinc.ru/wp-content/uploads/2023/03/obyazannosti-proraba3.jpg" alt="vacancy_img"></div>
                 <div class="vacancy_button_container"><button onclick="FormOpen('form_applicants')">Откликнуться</button></div>
             </div>
 
-            <div class="vacancy_elements">
-                <h2>Название вакансии:</h2>
-                <p>Сфера деятельности:</p>
-                <p>Специальность:</p>
-                <p>Описание:</p>
-                <p>Адрес:</p>
-                <div class="vacancy_img_container"><img src="https://habrastorage.org/getpro/habr/upload_files/416/3f6/bc5/4163f6bc5a678fd925bbb0e8d0b9e6b3.png"></div>
+            <div class="vacancy_elements"> <!-- Отдельная вакансия -->
+                <h2>Веб-разработчик</h2>
+                <p class="p_center">Сфера деятельности: IT</p>
+                <h2>Описание</h2>
+                <ul>
+                    <li>Разработка сайтов (интернет-магазины, корпоративные сайты);</li>
+                    <li>Разработкой web приложений;</li>
+                    <li>SEO продвижением;</li>
+                    <li>Контекстной и таргетированной рекламой;</li>
+                    <li>Продвижением на маркетплейсах и авито.</li>
+                </ul>
+                <p>&emsp;На все наши услуги мы даем юридическую гарантию по договору, что является отличным конкурентным преимуществом, так как никто из наших конкурентов не может дать такие гарантии.</p>
+                <p class="p_center">&emsp;Адрес: г. Краснодар, Российская улица, 47</p>
+                <div class="vacancy_img_container"><img src="https://habrastorage.org/getpro/habr/upload_files/416/3f6/bc5/4163f6bc5a678fd925bbb0e8d0b9e6b3.png" alt="vacancy_img"></div>
                 <div class="vacancy_button_container"><button onclick="FormOpen('form_applicants')">Откликнуться</button></div>
             </div>
 
-            <div class="vacancy_elements">
-                <h2>Название вакансии:</h2>
-                <p>Сфера деятельности:</p>
-                <p>Специальность:</p>
-                <p>Описание:</p>
-                <p>Адрес:</p>
-                <div class="vacancy_img_container"><img src="https://abrakadabra.fun/uploads/posts/2022-03/1646546029_18-abrakadabra-fun-p-fon-dlya-prezentatsii-avtomekhanik-19.jpg"></div>
+            <div class="vacancy_elements"> <!-- Отдельная вакансия -->
+                <h2>Веб-разработчик</h2>
+                <p class="p_center">Сфера деятельности: IT</p>
+                <h2>Описание</h2>
+                <ul>
+                    <li>Разработка сайтов (интернет-магазины, корпоративные сайты);</li>
+                    <li>Разработкой web приложений;</li>
+                    <li>SEO продвижением;</li>
+                    <li>Контекстной и таргетированной рекламой;</li>
+                    <li>Продвижением на маркетплейсах и авито.</li>
+                </ul>
+                <p>&emsp;На все наши услуги мы даем юридическую гарантию по договору, что является отличным конкурентным преимуществом, так как никто из наших конкурентов не может дать такие гарантии.</p>
+                <p class="p_center">&emsp;Адрес: г. Краснодар, Российская улица, 47</p>
+                <div class="vacancy_img_container"><img src="https://abrakadabra.fun/uploads/posts/2022-03/1646546029_18-abrakadabra-fun-p-fon-dlya-prezentatsii-avtomekhanik-19.jpg" alt="vacancy_img"></div>
                 <div class="vacancy_button_container"><button onclick="FormOpen('form_applicants')">Откликнуться</button></div>
             </div>
         </section>
     </main>
 
+    <!-- Футер -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-left">
@@ -86,9 +125,9 @@
                 <a href="applicants.html#contact_section">Подробные контакты</a>
             </div>
             <div class="footer-right">
-                <a href="https://vk.com"><img src="img/vk.png" width="32" height="32"></a>
-                <a href="https://web.telegram.org"><img src="img/telegram.png" width="32" height="32"></a>
-                <a href="https://www.whatsapp.com"><img src="img/whatsapp.png" width="32" height="32"></a>
+                <a href="https://vk.com"><img src="img/vk.png" width="32" height="32" alt="vk_ico"></a>
+                <a href="https://web.telegram.org"><img src="img/telegram.png" width="32" height="32" alt="tg_ico"></a>
+                <a href="https://www.whatsapp.com"><img src="img/whatsapp.png" width="32" height="32" alt="whatsapp_ico"></a>
             </div>
         </div>
     </footer>
@@ -173,12 +212,12 @@
     <dialog id="form_registration" class="form_registration">
         <form>
             <div class="form_registration_group">
-                <label for="first-name">Имя</label>
-                <input type="text" name="first-name" id="first-name" required>
+                <label for="first-name-registration">Имя</label>
+                <input type="text" name="first-name" id="first-name-registration" required>
             </div>
             <div class="form_registration_group">
                 <label for="phone">Телефон:</label>
-                <input type="tel" name="phone" maxlength="16" placeholder="+7(___)___-__-__"  id="phone" required/>
+                <input type="tel" name="phone" maxlength="16" placeholder="+7(___)___-__-__"  id="phone" required>
             </div>
             <div class="form_registration_group">
                 <label for="email">E-mail:</label>
