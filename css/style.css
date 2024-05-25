@@ -22,10 +22,11 @@ nav {
     position: sticky;
     padding: 10px;
     background: #8ac1ff;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     top: 0;
     left: 0;
     right: 0;
+    box-shadow: 0 0 15px #000000 ;
 }
 nav .nav_a_hover {
     text-decoration: none;
@@ -52,10 +53,11 @@ footer {
     position: relative;
     background-color: #8ac1ff;
     padding: 20px;
-    margin: 10px;
+    /* margin: 10px; */
     text-align: center;
-    border: 1px solid black;
-    margin-top: 20px;
+    /* border: 1px solid black; */
+    margin-top: 100px;
+    box-shadow: 0 0 15px #000000;
 }
 .footer-content {
     display: flex;
@@ -174,3 +176,16 @@ footer {
 .notifications p {
     text-align: center;
 }
+
+
+/* DEBUG ZONE*/
+/* .debug-border {
+    border: 1px solid Red;
+}
+.debug-none {
+    display: none;
+}
+* {
+    box-sizing: border-box;
+    border: 1px solid blue;
+} */

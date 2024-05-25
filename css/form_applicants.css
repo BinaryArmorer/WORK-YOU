@@ -33,7 +33,7 @@
 }
 @media (max-width: 800px) {
     .form_window_applicants {
-        width: 300px;
+        width: 320px;
         max-height: 80%;
         top: 0px;
     }
