@@ -116,16 +116,16 @@ footer {
 .vacancy_elements {
     overflow: hidden;
     word-break: normal; /* Если текст ушел поменять значение*/ 
+    hyphens:auto;  
     border: 1px solid #000000;
     border-radius: 25px;
-    padding: 15px;
+    padding: 10px;
     box-shadow: 12px 12px 0px 1px #8ac1ff, 0px 0px 20px 1px rgba(0, 0, 0, 0.712);
     background: rgb(255, 255, 255);
 }
 .vacancy_elements h2, h3 {
     text-align: center;
 }
-
 .vacancy_elements .p_center {
     text-align: center;
 }
